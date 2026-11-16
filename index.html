@@ -1,39 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090b16">
-  <meta name="description" content="Discover NEXORA AI DRAMA — an AI drama experience by NEXORA.">
-  <title>NEXORA AI DRAMA | Official Details</title>
+  <meta name="description" content="NEXORA AI DRAMA — explore drama stories, episodes, story creation and supported drama videos.">
+  <title>NEXORA AI DRAMA | Official App Details</title>
   <style>
     :root{color-scheme:dark;--bg:#090b16;--panel:#121629;--line:#262d49;--text:#f4f6ff;--muted:#aab2ca;--accent:#9a7bff;--cyan:#63d9e8}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#292052 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-    a{color:inherit}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid #ffffff18}.brand{font-weight:850;letter-spacing:.12em}.brand span{color:var(--accent)}.nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:.92rem}
-    .hero{padding:105px 0 88px;max-width:850px}.eyebrow{color:var(--cyan);font-weight:750;letter-spacing:.18em;text-transform:uppercase;font-size:.76rem}.hero h1{font-size:clamp(2.7rem,8vw,5.8rem);line-height:1.02;letter-spacing:-.055em;margin:18px 0}.hero h1 span{background:linear-gradient(100deg,#b9a5ff,#68e2ed);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:1.18rem;color:var(--muted);max-width:650px}.pill{display:inline-block;margin-top:24px;padding:10px 16px;border:1px solid #9a7bff88;border-radius:999px;color:#d8ceff;background:#9a7bff16;font-size:.9rem}
-    section{padding:58px 0;border-top:1px solid #ffffff18}h2{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;margin:0 0 18px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.card{background:linear-gradient(145deg,#171c32,#101425);border:1px solid var(--line);border-radius:18px;padding:24px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}.note{border-left:3px solid var(--accent);padding:16px 20px;background:#9a7bff12;color:var(--muted);border-radius:0 12px 12px 0}
+    a{color:inherit}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid #ffffff18}.brand{font-weight:850;letter-spacing:.12em;text-decoration:none}.brand span{color:var(--accent)}.nav nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:.92rem}
+    .hero{padding:100px 0 82px;max-width:850px}.eyebrow{color:var(--cyan);font-weight:750;letter-spacing:.18em;text-transform:uppercase;font-size:.76rem}.hero h1{font-size:clamp(2.7rem,8vw,5.8rem);line-height:1.02;letter-spacing:-.055em;margin:18px 0}.hero h1 span{background:linear-gradient(100deg,#b9a5ff,#68e2ed);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:1.18rem;color:var(--muted);max-width:680px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-block;text-decoration:none;font-weight:750;padding:12px 19px;border-radius:12px;background:linear-gradient(100deg,#9a7bff,#63cfe3);color:#090b16}.btn.secondary{background:#171c32;color:#e7e1ff;border:1px solid var(--line)}.meta{color:var(--muted);font-size:.9rem;margin-top:18px}
+    section{padding:58px 0;border-top:1px solid #ffffff18}h2{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;margin:0 0 18px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.card{background:linear-gradient(145deg,#171c32,#101425);border:1px solid var(--line);border-radius:18px;padding:24px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}.details{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}.detail{padding:17px 19px;border:1px solid var(--line);border-radius:14px;background:#111629}.detail b{display:block;color:#d8ceff;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}.detail span{display:block;margin-top:5px}.note{border-left:3px solid var(--accent);padding:16px 20px;background:#9a7bff12;color:var(--muted);border-radius:0 12px 12px 0}
     footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}footer a{color:#c9bdff;text-decoration:none}
-    @media(max-width:700px){.nav{align-items:flex-start;gap:12px;flex-direction:column}.nav a{margin:0 16px 0 0}.hero{padding:76px 0 65px}.grid{grid-template-columns:1fr}}
+    @media(max-width:700px){.nav{align-items:flex-start;gap:12px;flex-direction:column}.nav nav a{margin:0 16px 0 0}.hero{padding:72px 0 62px}.grid,.details{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header class="wrap nav"><a class="brand" href="#" aria-label="NEXORA home" style="text-decoration:none">NEXORA<span> AI</span></a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#updates">Updates</a></nav></header>
+  <header class="wrap nav"><a class="brand" href="#" aria-label="NEXORA AI DRAMA home">NEXORA<span> AI DRAMA</span></a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#features">Features</a><a href="#app">App details</a></nav></header>
   <main>
     <div class="wrap hero">
-      <div class="eyebrow">A NEXORA project</div>
-      <h1>Stories meet <span>AI imagination.</span></h1>
-      <p class="lead">Welcome to NEXORA AI DRAMA. Explore the project, learn what it offers, and find official updates in one place.</p>
-      <span class="pill">NEXORA AI DRAMA · Project information</span>
+      <div class="eyebrow">A NEXORA Android experience</div>
+      <h1>Discover stories. <span>Experience drama.</span></h1>
+      <p class="lead">Explore a drama catalogue, discover featured stories and episodes, read and create stories, and watch supported drama videos with NEXORA AI DRAMA.</p>
+      <div class="actions"><a class="btn" href="https://github.com/cedrickdavebausinbajar-afk/nexora-ai-drama/releases/latest">Download latest Android APK</a><a class="btn secondary" href="https://github.com/cedrickdavebausinbajar-afk/nexora-ai-drama">View project on GitHub</a></div>
+      <p class="meta">Latest published release: v1.0.88 · Android · Package: com.nexora.aidrama</p>
     </div>
-    <section id="about"><div class="wrap"><h2>About the project</h2><p class="muted">NEXORA AI DRAMA is a NEXORA project focused on an AI-powered drama experience. This page is its dedicated information hub.</p></div></section>
-    <section id="experience"><div class="wrap"><h2>Explore NEXORA AI DRAMA</h2><div class="grid">
-      <article class="card"><h3>Discover</h3><p>Get an introduction to the project and its purpose.</p></article>
-      <article class="card"><h3>Project details</h3><p>Find the key information and announcements as they become available.</p></article>
-      <article class="card"><h3>Stay updated</h3><p>Check this page for verified news and future release information.</p></article>
+    <section id="about"><div class="wrap"><h2>About NEXORA AI DRAMA</h2><p class="muted">NEXORA AI DRAMA is an Android app for discovering and enjoying drama stories. This independent information page shares app details and links to the official release source. It does not replace or modify the app itself.</p></div></section>
+    <section id="features"><div class="wrap"><h2>What you can explore</h2><div class="grid">
+      <article class="card"><h3>Drama catalogue</h3><p>Browse the available drama catalogue and discover stories to explore.</p></article>
+      <article class="card"><h3>Featured stories & episodes</h3><p>Find featured stories and explore their available episodes.</p></article>
+      <article class="card"><h3>Read & create stories</h3><p>Read stories and use the app's story-creation experience.</p></article>
+      <article class="card"><h3>Drama videos</h3><p>Watch supported drama videos available in the app.</p></article>
+      <article class="card"><h3>Android app</h3><p>Install the Android APK from the official GitHub Releases page.</p></article>
+      <article class="card"><h3>Release updates</h3><p>Use the official release page to check the latest version and update notes.</p></article>
     </div></div></section>
-    <section id="updates"><div class="wrap"><h2>Official updates</h2><p class="note">More detailed feature descriptions, supported platforms, version information, and official download links will be added after they are verified. No unofficial download is provided on this page.</p></div></section>
+    <section id="app"><div class="wrap"><h2>App information</h2><div class="details">
+      <div class="detail"><b>App name</b><span>NEXORA AI DRAMA</span></div>
+      <div class="detail"><b>Latest release</b><span>v1.0.88 (version code 88)</span></div>
+      <div class="detail"><b>Platform</b><span>Android</span></div>
+      <div class="detail"><b>Android package</b><span>com.nexora.aidrama</span></div>
+      <div class="detail"><b>Installer</b><span>NEXORA-AI-DRAMA.apk</span></div>
+      <div class="detail"><b>Release source</b><span><a href="https://github.com/cedrickdavebausinbajar-afk/nexora-ai-drama/releases/latest">Official GitHub Releases</a></span></div>
+    </div><p class="note" style="margin-top:24px">For safety, download the APK only from the official release link above. Android may ask you to confirm installation or an update. The release notes say the update can be installed over the existing NEXORA AI DRAMA app.</p></div></section>
+    <section><div class="wrap"><h2>More from NEXORA</h2><p class="muted">Visit the NEXORA AI DRAMA information page on the main NEXORA website for related project information.</p><p><a href="https://cedrickdavebausinbajar-afk.github.io/nexora-official-website/drama/">NEXORA Official Website — Drama page</a></p></div></section>
   </main>
-  <footer><div class="wrap">© <span id="year"></span> NEXORA · NEXORA AI DRAMA <span aria-hidden="true">·</span> Project information page</div></footer>
+  <footer><div class="wrap">© <span id="year"></span> NEXORA · NEXORA AI DRAMA information site</div></footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
